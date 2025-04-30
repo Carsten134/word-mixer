@@ -1,3 +1,4 @@
+![screenshot](screenshot.png)
 ## Perfect Match inspired wordmixer
 This is a small word mixer, that I coded in an afternoon. Check out the [Demo and motivation](https://youtu.be/V8QL4-l3_uA).
 
