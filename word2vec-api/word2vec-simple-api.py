@@ -7,7 +7,7 @@ print("loading model")
 model = word2vec.load_word2vec_format("./glove.twitter.27B.100d.txt", no_header = True)
 
 def perfect_match(left:str, right:str, percent:float):
-    vec = percent * model.get_mean_vector([left, right], [(1-percent), percent], pre_normalize=False, post_normalize=False)
+    vec = model.get_mean_vector([left, right], [(1-percent), percent], pre_normalize=False, post_normalize=False)
     return model.most_similar([vec], [("none", 0)], topn = 10)[1:]
 
 class PerfectMatch(Resource):
